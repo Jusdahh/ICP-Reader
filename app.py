@@ -1,6 +1,12 @@
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(
+    page_title="ICP-Reader",
+    page_icon="📊",  # opcional
+    layout="wide"    # opcional
+)
+
 st.title("Leitor de Dados do Módulo ICP")
 
 arquivo = st.file_uploader("Envie o arquivo CSV", type=["csv"])
